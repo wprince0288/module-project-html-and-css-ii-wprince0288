@@ -20,8 +20,7 @@
     /* 👉 Task 3- Target the element with id headerTop.
     Apply white color to the text, some padding using px or rem units, and a dark background color. */
 
-    #headerTop
-     {
+    #headerTop {
       color: white;
       padding: 1rem;
       background-color: darkblue;
@@ -30,10 +29,16 @@
     /* 👉 Task 4- Target the divs that are directly nested underneath the id headerTop.
     Make them display as inline block, instead of block.
     This will make them render on the same line. */
+   
+    #headerTop > div {
+      display: inline-block;
+    }
 
     /* 👉 Task 5- Target the spans that are nested inside the id headerTop.
     Make them have some margin on the right.
     This will prevent the spans from crashing against one another. */
+
+    
 
     /* 👉 Task 6- Target the first span nested inside the element with id headerTop.
     Make it have a font weight of bold, and transform the text to uppercase. */
