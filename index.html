@@ -6,13 +6,12 @@
   <meta charset="UTF-8">
   <style>
     /* 👉 Task 1- Apply the reset found on this page: https://www.joshwcomeau.com/css/custom-css-reset/ */
-
   </style>
   <style>
     /* 👉 Task 2- Target the body element.
     Apply a font family of Arial to the body element.
     The font property is inherited by descendant (nested) elements. */
-    
+
     body {
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -29,8 +28,8 @@
     /* 👉 Task 4- Target the divs that are directly nested underneath the id headerTop.
     Make them display as inline block, instead of block.
     This will make them render on the same line. */
-   
-    #headerTop > div {
+
+    #headerTop>div {
       display: inline-block;
     }
 
@@ -64,14 +63,14 @@
     This will cause them to render on the same line.
     You can consolidate this rule with the one on step. 4 */
 
-    #headerBottom > div {
+    #headerBottom>div {
       display: inline-block;
     }
 
     /* 👉 Task 9- Target the "Compose" button, although note it's a div instead an actual button.
     Give it color, bold text, background, padding, border radius, margin right, and a cursor of pointer. */
 
-    .button {
+    .new-button {
       color: white;
       background-color: rgb(65, 91, 169);
       font-weight: bold;
@@ -80,11 +79,19 @@
       margin-right: 1rem;
       cursor: pointer;
     }
-  
 
     /* 👉 Task 10- Research how to remove all the default styling of button elements.
     Target the button elements inside the element with id headerBottom.
     Remove all their styling, give them a bit of margin to the right, and a cursor of pointer. */
+
+    button {
+      all: initial;
+    }
+
+    button {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
 
     /* 👉 Task 11- Target the button element inside the id headerBottom that has a class of active
     Make the font weight be bolder, and add a bottom border of 2 pixels solid color (you choose the color).
@@ -106,7 +113,6 @@
     This will make it look "unread". */
 
     /* Well done! Check the design file to make sure you are close enough. */
-
   </style>
   <title>Document</title>
 </head>
@@ -124,7 +130,7 @@
         </div>
       </div>
       <div id="headerBottom">
-        <div class="button">Compose</div>
+        <div class="new-button">Compose</div>
         <div>
           <button>All mail</button>
           <button>Unread</button>
