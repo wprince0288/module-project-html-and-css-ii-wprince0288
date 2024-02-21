@@ -22,7 +22,7 @@
     #headerTop {
       color: white;
       padding: 1rem;
-      background-color: darkblue;
+      background-color:rgb(65, 91, 169);
     }
 
     /* 👉 Task 4- Target the divs that are directly nested underneath the id headerTop.
@@ -97,6 +97,11 @@
     Make the font weight be bolder, and add a bottom border of 2 pixels solid color (you choose the color).
     Add the class name to the "All mail" button. */
 
+    #headerBottom button.active {
+      border-bottom: 2px solid rgb(65, 91, 169);
+      font-weight: bolder;
+    }
+
     /* 👉 Task 12- Target all divs directly nested inside elements with a class of email,
     and make them display as inline-block elements.
     This will make each email render all its details in the same line*/
@@ -132,7 +137,7 @@
       <div id="headerBottom">
         <div class="new-button">Compose</div>
         <div>
-          <button>All mail</button>
+          <button class="active">All mail</button>
           <button>Unread</button>
           <button>Pinned</button>
           <button>VIPs</button>
