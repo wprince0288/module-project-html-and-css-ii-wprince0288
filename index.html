@@ -22,7 +22,7 @@
     #headerTop {
       color: white;
       padding: 1rem;
-      background-color:rgb(65, 91, 169);
+      background-color: rgb(65, 91, 169);
     }
 
     /* 👉 Task 4- Target the divs that are directly nested underneath the id headerTop.
@@ -106,14 +106,18 @@
     and make them display as inline-block elements.
     This will make each email render all its details in the same line*/
 
-    .email div {
+    .email>div {
       display: inline-block;
     }
 
     /* 👉 Task 13- Target the elements with a class of email.
     Give them some padding, bigger padding to the left, and a bottom border of very light grey. */
 
-
+    .email {
+      padding: .6rem;
+      padding-left: 1.25rem;
+      border-bottom: 1px solid rgb(224, 213, 213);
+    }
 
 
     /* 👉 Task 14- Target each div inside the element with a class of email.
