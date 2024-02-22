@@ -53,8 +53,7 @@
     Give it a bottom border of 1 pixel, solid gray, and a little bit of padding using px or rem units. */
 
     #headerBottom {
-      border-bottom: 1px;
-      color: gray;
+      border-bottom: 1px solid gray;
       padding: .75rem;
     }
 
@@ -99,7 +98,7 @@
 
     #headerBottom button.active {
       border-bottom: 2px solid rgb(65, 91, 169);
-      font-weight: bolder;
+      font-weight: bold;
     }
 
     /* 👉 Task 12- Target all divs directly nested inside elements with a class of email,
@@ -124,6 +123,14 @@
     Make the email author and the email subject take 35% of the width of the parent element.
     Make the check, the date and the size take up 8% of the width of the parent element.
     This will arrange the details in visible columns. */
+
+    .email-name, .email-subject {
+      width: 35%;
+    }
+
+    .email-check, .email-date, .email-size {
+      width: 8%;
+    }
 
     /* 👉 Task 15- Target the second email and have its font weight be bold.
     This will make it look "unread". */
